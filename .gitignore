@@ -1,0 +1,17 @@
+# Runtime configuration and downloaded provider data contain secrets and
+# subscription URLs. Keep them local; only explicit examples may be committed.
+/config.yaml
+/providers/*
+!/providers/README.md
+!/providers/*.example.yaml
+
+# Local/runtime artifacts
+.env
+.env.*
+!.env.example
+*.log
+*.db
+*.sqlite
+*.sqlite3
+node_modules/
+dist/
